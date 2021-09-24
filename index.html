@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Countdown TO</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="leftContainer">
+                <div class="countdownTitle">
+                    <label for="countdowntitle">Countdown title</label> <br>
+                    <input type="text" name="countdowntitle" id="countdownTitle" placeholder="" onkeyup="populateCountDownTitle()">
+                </div>
+                <br>
+                <div class="countdownToDate">
+                    <label for="countdowndate">Countdown to date</label> <br>
+                    <input type="date" name="countdowndate" id="countdownDate" value="2022-01-01" oninput="setEventDate()">
+                </div>
+                <br>
+                <div class="countdownTime">
+                    <label for="countdowntime">Event time</label> <br>
+                    <div class="countdownEventTime"  style="display:flex;">
+                        <select name="countdownhour" id="countdownHour">
+                            <option value="12AM">12 AM</option>
+                            <option value="01AM">01 AM</option>
+                            <option value="02AM">02 AM</option>
+                            <option value="03AM">03 AM</option>
+                            <option value="04AM">04 AM</option>
+                            <option value="05AM">05 AM</option>
+                            <option value="06AM">06 AM</option>
+                            <option value="07AM">07 AM</option>
+                            <option value="08AM">08 AM</option>
+                            <option value="09AM">09 AM</option>
+                            <option value="10AM">10 AM</option>
+                            <option value="11AM">11 AM</option>
+                            <option value="12PM">12 PM</option>
+                            <option value="01PM">01 PM</option>
+                            <option value="02PM">02 PM</option>
+                            <option value="03PM">03 PM</option>
+                            <option value="04PM">04 PM</option>
+                            <option value="05PM">05 PM</option>
+                            <option value="06PM">06 PM</option>
+                            <option value="07PM">07 PM</option>
+                            <option value="08PM">08 PM</option>
+                            <option value="09PM">09 PM</option>
+                            <option value="10PM">10 PM</option>
+                            <option value="11PM">11 PM</option>
+                        </select>
+                        <select name="countdownminute" id="countdownMinute">
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="12">15</option>
+                            <option value="13">16</option>
+                            <option value="14">17</option>
+                            <option value="12">18</option>
+                            <option value="13">19</option>
+                            <option value="14">20</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="countdownTimeZone">
+                    <label for="countdowntimezone">Timezone</label> <br>
+                    <select name="countdowntimezone" id="countdownTimeZone">
+                        <option value="baghdad">(GMT+03:00) Baghdad</option>
+                        <option value="london">(GMT+00:00) London</option>
+                        <option value="utc">(GMT+00:00) UTC</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rightContainer">
+                <h1 id='eventTitle'>Graduation Day</h1>
+                <div class="countdown countdown_container">
+                    <div class="days_container"  id="leftdays">
+                        <p class="counter" id="days">0</p>
+                        <span>Days</span>
+                    </div>
+                    <span class="divider"></span>
+                    <div class="countdown hours_container" style="padding-left:20px;">
+                        <p class="counter" id="hours">0</p>
+                        <span>Hours</span>
+                    </div>
+                    <!-- <span class="divider"></span> -->
+                    <div class="countdown minutes_container">
+                        <p class="counter" id="minutes">0</p>
+                        <span>Minutes</span>
+                    </div>
+                    <!-- <span class="divider"></span> -->
+                    <div class="countdown seconds_container">
+                        <p class="counter" id="seconds">0</p>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+     
+        <script src="script.js"></script>
+    </body>
+</html>

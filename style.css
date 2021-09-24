@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url("./images/bg3.jpg"); */
+    font-family: "Poppins", sans-serif;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    /* margin:0; */
+ }
+
+ h1{
+    font-size:1.5rem;
+    font-weight: normal;
+}
+ .container{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     padding-top: 7rem;
+ }
+ .leftContainer{
+     color: white;
+     font-weight: bold;
+ }
+ .rightContainer{
+    background: #E8CBC0;  
+    background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+    background: linear-gradient(to right, #636FA4, #E8CBC0); 
+    border-radius: 12px;
+    box-shadow: 0 0 10px 2px rgba(100,100,100,0.1);
+    margin-left: 10rem;
+    padding-left: 1rem;
+    width: 450px;
+    height: 200px;
+    max-width: 100%;
+    overflow: hidden;
+    font-weight: bold;
+    color: white;
+ }
+.rightContainer h1{
+     text-align: center;
+ }
+ .countdown_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+ }
+
+.counter{
+    font-size:1.5rem;
+    font-weight: bold;
+    line-height:1;
+    margin: 1rem 2rem;
+}
+.countdown{
+    text-align: center;
+}
+.countdown span{
+    font-size: 1rem;
+}
+#leftdays{
+    background:#636FA4 ;  
+    background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+    background: linear-gradient(to right, #636FA4, #E8CBC0); 
+    border-radius: 50px;
+    
+} 
+.divider{
+    border-left: 3px solid rgb(62, 49, 83) ;
+    height: 70px;
+    position: absolute;
+    margin-left:-9.6rem;
+    margin-top: 10px;
+}
+.share{
+    padding-left:100rem;
+}
