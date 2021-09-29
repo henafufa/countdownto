@@ -65,7 +65,7 @@ function BackgoundBasedOnInput(){
         case 'birthday':
             background.style.backgroundImage="url('./images/bg4.jpg')";
         default:
-            background.style.backgroundImage="url('./images/bg8.jpg')";
+            background.style.backgroundImage="url('./images/bg6.jpg')";
     }
 }
 
